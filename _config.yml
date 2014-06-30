@@ -10,5 +10,10 @@ markdown: kramdown
 permalink: pretty
 
 exclude:
-  - "LICENSE"
-  - "README.md"
+    - "bower_components"
+    - "node_modules"
+    - "bower.json"
+    - "Gruntfile.coffee"
+    - "LICENSE"
+    - "package.json"
+    - "README.md"
