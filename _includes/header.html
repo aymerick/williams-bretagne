@@ -1,28 +1,26 @@
-<header>
+<header class="navbar navbar-default navbar-fixed-top" role="banner">
 
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" type="button"  data-toggle="collapse" data-target="#navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
 
-				<a href="/{{ site.baseurl }}" class='navbar-brand{% if page.body-id == 'home' %} active{% endif %}'>{{ site.title }}</a>
-			</div>
-
-			<div class="collapse navbar-collapse" id="navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					{% for site_page in site.pages %}
-						{% if site_page.in-navbar %}
-							<li class="{% if page.body-id == site_page.body-id %}active{% endif %}"><a href="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</a></li>
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</div>
+			<a href="/{{ site.baseurl }}" class='navbar-brand'><img class="logo" src="/img/logo_70x44.png" alt="Williams Bretagne" /> {{ site.title }}</a>
 		</div>
-	</nav>
+
+		<nav class="collapse navbar-collapse" id="navbar-collapse-1" role="navigation">
+			<ul class="nav navbar-nav">
+				{% for site_page in site.pages %}
+					{% if site_page.in-navbar %}
+						<li class="{% if page.body-id == site_page.body-id %}active{% endif %}"><a href="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</a></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
 
 </header>
