@@ -1,0 +1,64 @@
+---
+---
+
+/**
+ * Main
+ */
+
+$footer-height: 100px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Move down content because we have a fixed navbar that is 50px tall */
+  padding-top: 50px;
+
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  background-color: #f5f5f5;
+  padding: 10px;
+
+  .footer {
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+
+/**
+ * Navbar
+ */
+
+$navbar-background-active: #142E54;
+
+/* navar: bootstrap overwrites */
+.navbar-inverse {
+  background-color: #2C4870;
+  border-color: #4F688E;
+
+  .navbar-header a.navbar-brand.active {
+    color: #fff;
+    background-color: $navbar-background-active;
+  }
+
+  .navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
+    background-color: $navbar-background-active;
+  }
+
+  .navbar-nav>li>a, .navbar-brand {
+    color: #D5DCE8;
+  }
+}
