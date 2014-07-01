@@ -1,6 +1,12 @@
 ---
 ---
 
+/* Main colors */
+$color-purple: #92278F;
+$color-orange: #F99420;
+$color-green: #87C234;
+
+
 /**
  * Main
  */
@@ -37,15 +43,11 @@ footer {
   }
 }
 
-
-// $color-purple: #92278F;
-// $color-orange: #F99420;
-// $color-vert: #87C234;
-
-
 /**
  * Navbar
  */
+
+$navbar-color: #444;
 
 /* navbar: bootstrap overwrites */
 .navbar>.container {
@@ -60,6 +62,38 @@ footer {
 
     .navbar-brand {
       margin-left: 60px;
+      color: $navbar-color;
     }
+  }
+}
+
+.navbar-default {
+  .navbar-nav>li>a {
+    font-size: 18px;
+    color: $navbar-color;
+  }
+
+  .navbar-nav>.active>a,
+  .navbar-nav>.active>a:hover,
+  .navbar-nav>.active>a:focus {
+    // font-weight: bold;
+  }
+}
+
+/**
+ * Jumbotron
+ */
+
+$jumbotron-color: #fff;
+$jumbotron-background-color: $color-purple;
+$jumbotron-description-color: #cdbfe3;
+
+.jumbotron {
+  color: $jumbotron-color;
+  background-color: $jumbotron-background-color;
+
+  .description {
+    color: $jumbotron-description-color;
+    font-size: 24px;
   }
 }
