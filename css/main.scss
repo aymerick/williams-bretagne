@@ -26,6 +26,10 @@ body {
   margin-bottom: $footer-height + 10px;
 }
 
+.bulletin-adhesion {
+  text-align: center;
+}
+
 /**
  * Navbar
  */
@@ -96,6 +100,24 @@ $jumbotron-description-color: #ddd;
   .description {
     color: $jumbotron-description-color;
     font-size: 24px;
+  }
+}
+
+/**
+ * Contact
+ */
+
+#contact {
+  .vcard {
+    font-size: 16px;
+  }
+
+  .bulletin-adhesion {
+    margin-top: 30px;
+  }
+
+  .social {
+    font-size: 18px;
   }
 }
 
