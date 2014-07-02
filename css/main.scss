@@ -104,6 +104,47 @@ $jumbotron-description-color: #ddd;
 }
 
 /**
+ * Home
+ */
+
+#home {
+  .content {
+    font-size: 18px;
+  }
+
+  .intro {
+    padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .adhesion {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .actions {
+    margin-top: 20px;
+    text-align: justify;
+
+    i.fa {
+      margin-right: 15px;
+    }
+
+    .more {
+      text-align: center;
+    }
+
+    .action {
+    }
+  }
+
+  .ouverture {
+    margin-top: 30px;
+  }
+}
+
+/**
  * Contact
  */
 
