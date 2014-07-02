@@ -32,6 +32,19 @@ module.exports = (grunt) ->
           src: "bootstrap.min.js"
           dest: "vendor/js/"
         }]
+      fontawesome:
+        files: [{
+          expand: true
+          cwd: "bower_components/fontawesome/css/"
+          src: "font-awesome.min.css"
+          dest: "vendor/css/"
+        },
+        {
+          expand: true
+          cwd: "bower_components/fontawesome/fonts/"
+          src: "*"
+          dest: "vendor/fonts/"
+        }]
 
     exec:
       jekyll:
