@@ -1,7 +1,7 @@
 ---
 layout: default
-body-id: status
-title: Status
+body-id: statuts
+title: Statuts
 description: L'association existe depuis XX XXX.
 in-navbar: true
 ---
@@ -12,7 +12,8 @@ in-navbar: true
   <div class="row">
     <div class="col-md-12">
 
-      TODO !
+        {% capture statuts %}{% include statuts.md %}{% endcapture %}
+        {{ statuts | markdownify }}
 
     </div>
   </div>

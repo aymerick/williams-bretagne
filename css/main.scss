@@ -23,24 +23,7 @@ body {
   padding-top: 50px;
 
   /* Margin bottom by footer height */
-  margin-bottom: $footer-height;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: $footer-height;
-  background-color: #f5f5f5;
-  padding: 10px;
-
-  .footer {
-  }
-
-  p {
-    text-align: center;
-    margin-bottom: 0;
-  }
+  margin-bottom: $footer-height + 10px;
 }
 
 /**
@@ -81,12 +64,30 @@ $navbar-color: #444;
 }
 
 /**
+ * Footer
+ */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  background-color: #f5f5f5;
+  padding: 10px;
+
+  p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+/**
  * Jumbotron
  */
 
 $jumbotron-color: #fff;
 $jumbotron-background-color: $color-purple;
-$jumbotron-description-color: #cdbfe3;
+$jumbotron-description-color: #ddd;
 
 .jumbotron {
   color: $jumbotron-color;
@@ -95,5 +96,32 @@ $jumbotron-description-color: #cdbfe3;
   .description {
     color: $jumbotron-description-color;
     font-size: 24px;
+  }
+}
+
+/**
+ * Equipe
+ */
+
+#equipe {
+  .member {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .name {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .role {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .fondateur {
+    font-size: 15px;
+    font-style: italic;
   }
 }
