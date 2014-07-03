@@ -1,8 +1,8 @@
-**Pour plus d'informations sur le symdrome de Williams, vous pouvez visiter [le site de la fédération](http://www.williams-france.org/fr/liste-fiches.php?sf=78#).**
+**Pour plus d'informations sur le syndrome de Williams, vous pouvez visiter [le site de la fédération](http://www.williams-france.org/fr/liste-fiches.php?sf=78#).**
 
 ## Qu'est-ce que le syndrome de Williams ?
 
-C'est un accident génétique se traduisant par la perte d'un petit morceau du bras long du chromosome 7 (micro-délétion). Ce petit morceau absent représente la perte d'environ 25 gènes, entraînant des dysfonctionnements caractéristiques du syndrome de Williams. Cet accident génétique n'a pas de cause connue et reste un cas individuel au sein de la fatrie hormis si l'un des parents est lui-même atteint du syndrome.
+C'est un accident génétique se traduisant par la perte d'un petit morceau du bras long du chromosome 7 (micro-délétion). Ce petit morceau absent représente la perte d'environ 25 gènes, entraînant des dysfonctionnements caractéristiques du syndrome de Williams. Cet accident génétique n'a pas de cause connue et reste un cas individuel au sein de la fratrie hormis si l'un des parents est lui-même atteint du syndrome.
 
 Cette maladie, appelée également "syndrome de Williams et Beuren", a été décrite pour la première fois en 1961. On estime à environ 1 cas sur 20 000 naissances le nombre de personnes atteintes. Elle affecte indifféremment les garçons et les filles, quelle que soit leur origine géographique ou sociale.
 
@@ -21,7 +21,7 @@ Station assise et marche plus tardives que la normale. Difficultés de motricit�
 
 ### Sommeil
 
-Troubles du sommeil de légers à importants dans la petite enfance. En grandissant, un temps de sommeil souvent réduit et une récuperation très rapide.
+Troubles du sommeil de légers à importants dans la petite enfance. En grandissant, un temps de sommeil souvent réduit et une récupération très rapide.
 
 ### Développement intellectuel
 
