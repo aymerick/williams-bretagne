@@ -6,6 +6,8 @@ $color-purple: #92278F;
 $color-purple-dark: #781373;
 $color-purple-darkest: #62045E;
 
+$color-light-background: #f5f5f5;
+
 $color-orange: #F99420;
 $color-green: #87C234;
 
@@ -103,7 +105,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: $footer-height;
-  background-color: #f5f5f5;
+  background-color: $color-light-background;
   padding: 10px;
 
   p {
@@ -135,7 +137,7 @@ $jumbotron-description-color: #ddd;
  */
 
 #home {
-  .content {
+  section {
     font-size: 18px;
   }
 
@@ -143,11 +145,11 @@ $jumbotron-description-color: #ddd;
     padding: 10px;
     font-size: 18px;
     text-align: justify;
-  }
 
-  .adhesion {
-    margin-top: 20px;
-    text-align: center;
+    .adhesion {
+      margin-top: 20px;
+      text-align: center;
+    }
   }
 
   .actions {
@@ -169,9 +171,11 @@ $jumbotron-description-color: #ddd;
   }
 
   .ouverture {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background-color: $color-light-background;
 
-    .title {
+    h2 {
       color: $color-purple-darkest;
       margin-bottom: 20px;
     }
@@ -179,6 +183,18 @@ $jumbotron-description-color: #ddd;
     i.research {
       width: 48px;
       margin-left: 22px;
+    }
+  }
+
+  .rejoindre {
+    padding-bottom: 10px;
+
+    .desc {
+      text-align: justify;
+    }
+
+    .adhesion {
+      text-align: center;
     }
   }
 }
