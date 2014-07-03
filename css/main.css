@@ -1,0 +1,210 @@
+/* Main colors */
+/**
+ * Mixins
+ */
+/**
+ * Main
+ */
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px; }
+
+h1, h2, h3, h4, h5 {
+  color: #62045e; }
+
+a {
+  color: #92278f; }
+  a:hover {
+    color: #781373; }
+
+.bulletin-adhesion {
+  text-align: center; }
+
+/* custom button */
+.btn-purple {
+  color: #fff;
+  background-color: #92278f;
+  border-color: #62045e; }
+
+.btn-purple:hover {
+  color: #fff;
+  background-color: #781373;
+  border-color: #62045e; }
+
+/**
+ * Navbar
+ */
+/* navbar: bootstrap overwrites */
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar > .container .navbar-header {
+  position: relative; }
+  .navbar > .container .navbar-header .logo {
+    position: absolute;
+    left: 0px;
+    top: 3px; }
+  .navbar > .container .navbar-header .navbar-brand {
+    margin-left: 60px;
+    color: #62045e; }
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+  color: #444; }
+  @media (min-width: 992px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 18px; } }
+
+/**
+ * Footer
+ */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  background-color: #92278f;
+  color: #fff; }
+  footer p {
+    text-align: center;
+    margin-bottom: 0; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #fff; }
+
+/**
+ * Jumbotron
+ */
+.jumbotron {
+  margin-bottom: 0px;
+  color: white;
+  background-color: #92278f; }
+  .jumbotron .description {
+    color: #dddddd;
+    font-size: 24px; }
+
+/**
+ * Home
+ */
+#home section {
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 30px; }
+  #home section:nth-child(2n + 1) {
+    background-color: whitesmoke; }
+#home h2 {
+  font-size: 25px; }
+  @media (min-width: 992px) {
+    #home h2 {
+      font-size: 30px; } }
+#home .resume {
+  padding-top: 40px; }
+  @media (min-width: 992px) {
+    #home .resume .photo {
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      margin-top: 15px; } }
+  @media (min-width: 1200px) {
+    #home .resume .photo {
+      margin-top: -10px; } }
+  #home .resume .intro {
+    padding: 10px 10px 0px 10px;
+    font-size: 18px;
+    text-align: justify; }
+    #home .resume .intro .adhesion {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      text-align: center; }
+#home .actions {
+  padding-bottom: 10px;
+  text-align: justify; }
+  #home .actions i.fa {
+    margin-right: 15px; }
+  #home .actions .more {
+    margin-top: 20px; }
+  #home .actions .action {
+    margin-bottom: 20px; }
+#home .ouverture {
+  background-color: whitesmoke; }
+  #home .ouverture h2 {
+    color: #62045e;
+    margin-bottom: 20px; }
+  #home .ouverture img.media-object {
+    margin-top: 5px; }
+  #home .ouverture i.research {
+    width: 48px;
+    margin-left: 22px; }
+#home .rejoindre .desc {
+  text-align: justify; }
+#home .rejoindre .adhesion {
+  margin-top: 30px;
+  text-align: center; }
+
+/**
+ * Actions
+ */
+#actions section {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 16px; }
+  #actions section:nth-child(2n) {
+    background-color: whitesmoke; }
+#actions #communication .social {
+  margin-top: 20px;
+  text-align: center; }
+
+/**
+ * Contact
+ */
+#contact .content {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+#contact .vcard {
+  font-size: 16px; }
+#contact .bulletin-adhesion {
+  margin-top: 30px; }
+#contact .coordonnees i.fa {
+  margin-right: 10px; }
+#contact .social {
+  font-size: 24px; }
+  #contact .social i.fa {
+    margin-right: 10px; }
+
+/**
+ * Equipe
+ */
+#equipe .content {
+  padding-top: 30px; }
+#equipe .member {
+  text-align: center;
+  margin-bottom: 40px; }
+#equipe .role {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold; }
+#equipe .fondateur {
+  font-size: 15px;
+  font-style: italic; }
+
+/**
+ * Statuts
+ */
+#statuts .content {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+/**
+ * Syndrome
+ */
+#syndrome .content {
+  padding-top: 30px;
+  padding-bottom: 30px; }
