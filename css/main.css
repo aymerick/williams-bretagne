@@ -85,17 +85,27 @@ footer {
   margin-bottom: 0px;
   color: white;
   background-color: #92278f; }
+  @media (max-width: 767px) {
+    .jumbotron h1 {
+      font-size: 30px; } }
   .jumbotron .description {
-    color: #dddddd;
-    font-size: 24px; }
+    color: #dddddd; }
+    @media (max-width: 767px) {
+      .jumbotron .description {
+        font-size: 16px; } }
+    @media (min-width: 768px) {
+      .jumbotron .description {
+        font-size: 24px; } }
 
 /**
  * Home
  */
 #home section {
-  font-size: 18px;
   padding-top: 20px;
   padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    #home section {
+      font-size: 18px; } }
   #home section:nth-child(2n + 1) {
     background-color: whitesmoke; }
 #home h2 {
@@ -118,8 +128,10 @@ footer {
       margin-top: -10px; } }
   #home .resume .intro {
     padding: 10px 10px 0px 10px;
-    font-size: 18px;
     text-align: justify; }
+    @media (min-width: 768px) {
+      #home .resume .intro {
+        font-size: 18px; } }
     #home .resume .intro .adhesion {
       margin-top: 20px;
       margin-bottom: 0px;
@@ -154,8 +166,10 @@ footer {
  */
 #actions section {
   padding-top: 20px;
-  padding-bottom: 50px;
-  font-size: 16px; }
+  padding-bottom: 50px; }
+  @media (min-width: 768px) {
+    #actions section {
+      font-size: 16px; } }
   #actions section:nth-child(2n) {
     background-color: whitesmoke; }
 #actions #communication .social {
@@ -168,16 +182,18 @@ footer {
 #contact .content {
   padding-top: 30px;
   padding-bottom: 20px; }
-#contact .vcard {
-  font-size: 16px; }
+@media (min-width: 768px) {
+  #contact .vcard {
+    font-size: 16px; } }
 #contact .bulletin-adhesion {
   margin-top: 30px; }
 #contact .coordonnees i.fa {
   margin-right: 10px; }
-#contact .social {
-  font-size: 24px; }
-  #contact .social i.fa {
-    margin-right: 10px; }
+@media (min-width: 768px) {
+  #contact .social {
+    font-size: 24px; } }
+#contact .social i.fa {
+  margin-right: 10px; }
 
 /**
  * Equipe
@@ -191,22 +207,23 @@ footer {
   margin-top: 10px;
   font-size: 15px;
   font-weight: bold; }
-#equipe .fondateur {
-  font-size: 15px;
-  font-style: italic; }
 
 /**
  * Statuts
  */
 #statuts .content {
   padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 16px; }
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    #statuts .content {
+      font-size: 16px; } }
 
 /**
  * Syndrome
  */
 #syndrome .content {
   padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 16px; }
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    #syndrome .content {
+      font-size: 16px; } }
