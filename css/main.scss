@@ -1,6 +1,11 @@
 ---
 ---
 
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
 /* Main colors */
 $color-purple: #92278F;
 $color-purple-dark: #781373;
@@ -11,6 +16,16 @@ $color-light-background: #f5f5f5;
 $color-orange: #F99420;
 $color-green: #87C234;
 
+/**
+ * Mixins
+ */
+@mixin rotate($value) {
+    -webkit-transform: rotate($value);
+       -moz-transform: rotate($value);
+        -ms-transform: rotate($value);
+         -o-transform: rotate($value);
+            transform: rotate($value);
+}
 
 /**
  * Main
@@ -24,11 +39,8 @@ html {
 }
 
 body {
-  /* Move down content because we have a fixed navbar that is 50px tall */
-  padding-top: 50px;
-
   /* Margin bottom by footer height */
-  margin-bottom: $footer-height + 10px;
+  margin-bottom: $footer-height;
 }
 
 h1, h2, h3, h4, h5 {
@@ -53,7 +65,6 @@ a {
   background-color: $color-purple;
   border-color: $color-purple-darkest;
 }
-
 .btn-purple:hover {
   color: #fff;
   background-color: $color-purple-dark;
@@ -66,6 +77,10 @@ a {
  */
 
 /* navbar: bootstrap overwrites */
+.navbar {
+  margin-bottom: 0px;
+}
+
 .navbar>.container {
   .navbar-header {
     position: relative;
@@ -85,8 +100,12 @@ a {
 
 .navbar-default {
   .navbar-nav>li>a {
-    font-size: 18px;
+    font-size: 16px;
     color: #444;
+
+    @media (min-width: $screen-md-min) {
+      font-size: 18px;
+    }
   }
 
   .navbar-nav>.active>a,
@@ -105,12 +124,22 @@ footer {
   bottom: 0;
   width: 100%;
   height: $footer-height;
-  background-color: $color-light-background;
   padding: 10px;
 
   p {
     text-align: center;
     margin-bottom: 0;
+  }
+
+  background-color: $color-purple;
+  color: #fff;
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -123,6 +152,8 @@ $jumbotron-background-color: $color-purple;
 $jumbotron-description-color: #ddd;
 
 .jumbotron {
+  margin-bottom: 0px;
+
   color: $jumbotron-color;
   background-color: $jumbotron-background-color;
 
@@ -139,21 +170,49 @@ $jumbotron-description-color: #ddd;
 #home {
   section {
     font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    &:nth-child(2n + 1) {
+      background-color: $color-light-background;
+    }
   }
 
-  .intro {
-    padding: 10px;
-    font-size: 18px;
-    text-align: justify;
+  h2 {
+    font-size: 25px;
+    @media (min-width: $screen-md-min) {
+      font-size: 30px;
+    }
+  }
 
-    .adhesion {
-      margin-top: 20px;
-      text-align: center;
+  .resume {
+    padding-top: 40px;
+
+    .photo {
+      @media (min-width: $screen-md-min) {
+        @include rotate(-5deg);
+        margin-top: 15px;
+      }
+      @media (min-width: $screen-lg-min) {
+        margin-top: -10px;
+      }
+    }
+
+    .intro {
+      padding: 10px 10px 0px 10px;
+      font-size: 18px;
+      text-align: justify;
+
+      .adhesion {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        text-align: center;
+      }
     }
   }
 
   .actions {
-    margin-top: 20px;
+    padding-bottom: 10px;
     text-align: justify;
 
     i.fa {
@@ -161,23 +220,25 @@ $jumbotron-description-color: #ddd;
     }
 
     .more {
-      text-align: center;
+      // text-align: center;
       margin-top: 20px;
     }
 
     .action {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 
   .ouverture {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
     background-color: $color-light-background;
 
     h2 {
       color: $color-purple-darkest;
       margin-bottom: 20px;
+    }
+
+    img.media-object {
+      margin-top: 5px;
     }
 
     i.research {
@@ -187,13 +248,12 @@ $jumbotron-description-color: #ddd;
   }
 
   .rejoindre {
-    padding-bottom: 10px;
-
     .desc {
       text-align: justify;
     }
 
     .adhesion {
+      margin-top: 30px;
       text-align: center;
     }
   }
@@ -204,7 +264,23 @@ $jumbotron-description-color: #ddd;
  */
 
 #actions {
+  section {
+    padding-top: 20px;
+    padding-bottom: 50px;
 
+    font-size: 16px;
+
+    &:nth-child(2n) {
+      background-color: $color-light-background;
+    }
+  }
+
+  #communication {
+    .social {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
 }
 
 /**
@@ -212,6 +288,11 @@ $jumbotron-description-color: #ddd;
  */
 
 #contact {
+  .content {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
   .vcard {
     font-size: 16px;
   }
@@ -220,7 +301,7 @@ $jumbotron-description-color: #ddd;
     margin-top: 30px;
   }
 
-  .contact {
+  .coordonnees {
     i.fa {
       margin-right: 10px;
     }
@@ -240,6 +321,10 @@ $jumbotron-description-color: #ddd;
  */
 
 #equipe {
+  .content {
+    padding-top: 30px;
+  }
+
   .member {
     text-align: center;
     margin-bottom: 40px;
@@ -256,3 +341,26 @@ $jumbotron-description-color: #ddd;
     font-style: italic;
   }
 }
+
+/**
+ * Statuts
+ */
+
+#statuts {
+  .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/**
+ * Syndrome
+ */
+
+#syndrome {
+  .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
