@@ -3,6 +3,9 @@
 
 /* Main colors */
 $color-purple: #92278F;
+$color-purple-dark: #781373;
+$color-purple-darkest: #62045E;
+
 $color-orange: #F99420;
 $color-green: #87C234;
 
@@ -26,15 +29,39 @@ body {
   margin-bottom: $footer-height + 10px;
 }
 
+h1, h2, h3, h4, h5 {
+  color: $color-purple-darkest;
+}
+
+a {
+  color: $color-purple;
+
+  &:hover {
+    color: $color-purple-dark;
+  }
+}
+
 .bulletin-adhesion {
   text-align: center;
 }
 
+/* custom button */
+.btn-purple {
+  color: #fff;
+  background-color: $color-purple;
+  border-color: $color-purple-darkest;
+}
+
+.btn-purple:hover {
+  color: #fff;
+  background-color: $color-purple-dark;
+  border-color: $color-purple-darkest;
+}
+
+
 /**
  * Navbar
  */
-
-$navbar-color: #444;
 
 /* navbar: bootstrap overwrites */
 .navbar>.container {
@@ -49,7 +76,7 @@ $navbar-color: #444;
 
     .navbar-brand {
       margin-left: 60px;
-      color: $navbar-color;
+      color: $color-purple-darkest;
     }
   }
 }
@@ -57,7 +84,7 @@ $navbar-color: #444;
 .navbar-default {
   .navbar-nav>li>a {
     font-size: 18px;
-    color: $navbar-color;
+    color: #444;
   }
 
   .navbar-nav>.active>a,
@@ -142,13 +169,26 @@ $jumbotron-description-color: #ddd;
   }
 
   .ouverture {
-    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .title {
+      color: $color-purple-darkest;
+      margin-bottom: 20px;
+    }
 
     i.research {
       width: 48px;
       margin-left: 22px;
     }
   }
+}
+
+/**
+ * Actions
+ */
+
+#actions {
+
 }
 
 /**
@@ -187,11 +227,6 @@ $jumbotron-description-color: #ddd;
   .member {
     text-align: center;
     margin-bottom: 40px;
-  }
-
-  .name {
-    font-size: 20px;
-    line-height: 25px;
   }
 
   .role {
