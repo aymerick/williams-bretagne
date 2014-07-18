@@ -3,7 +3,7 @@ title: Williams Bretagne
 email: your-email@domain.com
 description: "Association du Syndrome de Williams, région Bretagne."
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://www.williams-bretagne.org"
 
 # Build settings
 markdown: kramdown
