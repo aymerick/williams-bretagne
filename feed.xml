@@ -3,8 +3,8 @@
   <channel>
     <title>Williams Bretagne</title>
     <description>Association du Syndrome de Williams, région Bretagne.</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.williams-bretagne.org/</link>
+    <atom:link href="http://www.williams-bretagne.org/feed.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
