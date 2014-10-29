@@ -59,7 +59,7 @@ Push `gh-pages` to remote:
 
 Checkout `gh-pages` in `_site` subdirectory:
 
-    $ git clone git@github.com:aymerick/aymerick.github.io.git -b gh-pages `_site`
+    $ git clone git@github.com:aymerick/williams-bretagne.git -b gh-pages _site
 
 
 References
