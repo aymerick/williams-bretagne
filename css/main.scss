@@ -352,6 +352,10 @@ $jumbotron-description-color: #ddd;
   .member {
     text-align: center;
     margin-bottom: 40px;
+
+    h3 {
+      height: 2em;
+    }
   }
 
   .role {
