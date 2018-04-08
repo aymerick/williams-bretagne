@@ -203,6 +203,8 @@ footer {
 #equipe .member {
   text-align: center;
   margin-bottom: 40px; }
+  #equipe .member h3 {
+    height: 2em; }
 #equipe .role {
   margin-top: 10px;
   font-size: 15px;
