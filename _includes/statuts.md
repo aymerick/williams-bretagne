@@ -26,7 +26,7 @@ Le siège social est fixé à :
 <center>
   <strong>
     Maison Associative de la Santé<br />
-    36 boulevard Albert 1er<br />
+    7, Rue de Normandie<br />
     35000 RENNES
   </strong>
 </center>
