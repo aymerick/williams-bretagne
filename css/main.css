@@ -35,6 +35,16 @@ a {
   background-color: #781373;
   border-color: #62045e; }
 
+.btn-orange {
+  color: #fff;
+  background-color: #f99420;
+  border-color: #f99420; }
+
+.btn-orange:hover {
+  color: #fff;
+  background-color: #e8470c;
+  border-color: #f99420; }
+
 /**
  * Navbar
  */
