@@ -28,12 +28,12 @@ a {
 .btn-purple {
   color: #fff;
   background-color: #92278f;
-  border-color: #62045e; }
+  border-color: #92278f; }
 
 .btn-purple:hover {
   color: #fff;
   background-color: #781373;
-  border-color: #62045e; }
+  border-color: #92278f; }
 
 .btn-orange {
   color: #fff;
@@ -44,6 +44,16 @@ a {
   color: #fff;
   background-color: #e8470c;
   border-color: #f99420; }
+
+.btn-green {
+  color: #fff;
+  background-color: #87c234;
+  border-color: #87c234; }
+
+.btn-green:hover {
+  color: #fff;
+  background-color: #69a319;
+  border-color: #87c234; }
 
 /**
  * Navbar
