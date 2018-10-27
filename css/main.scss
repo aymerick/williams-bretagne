@@ -15,9 +15,11 @@ $color-light-background: #f5f5f5;
 
 $color-orange: #F99420;
 $color-orange-dark: #E8470C;
-$color-orange-darkest: #F99420;
+$color-orange-darkest: #8F2700;
 
 $color-green: #87C234;
+$color-green-dark: #69A319;
+$color-green-darkest: #365E00;
 
 /**
  * Mixins
@@ -66,25 +68,35 @@ a {
 .btn-purple {
   color: #fff;
   background-color: $color-purple;
-  border-color: $color-purple-darkest;
+  border-color: $color-purple;
 }
 .btn-purple:hover {
   color: #fff;
   background-color: $color-purple-dark;
-  border-color: $color-purple-darkest;
+  border-color: $color-purple;
 }
 
 .btn-orange {
   color: #fff;
   background-color: $color-orange;
-  border-color: $color-orange-darkest;
+  border-color: $color-orange;
 }
 .btn-orange:hover {
   color: #fff;
   background-color: $color-orange-dark;
-  border-color: $color-orange-darkest;
+  border-color: $color-orange;
 }
 
+.btn-green {
+  color: #fff;
+  background-color: $color-green;
+  border-color: $color-green;
+}
+.btn-green:hover {
+  color: #fff;
+  background-color: $color-green-dark;
+  border-color: $color-green;
+}
 
 /**
  * Navbar
